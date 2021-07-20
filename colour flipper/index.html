@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colour-flipper</title>
+    <style>
+       *{
+           margin: 0px;
+           padding: 0px;
+           box-sizing: border-box;
+       } 
+       body{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+       }
+       
+main {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+  width: 250px;
+  height: 150px;
+}
+.container h2 {
+  background:#100840;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2.5rem;
+}
+.color {
+  color: hsl(205, 78%, 60%);
+}
+
+.btn-hero {
+  font-family:sans-serif;
+  text-transform: uppercase;
+  background: transparent;
+  color: #222;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  border: 2px solid #222;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+.btn-hero:hover {
+  color: #fff;
+  background:#382d85;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+          <h2>background color : <span class="color">#ffffff</span></h2>
+          <button class="btn btn-hero" id="btn">Flip Me</button>
+        </div>
+      </main>
+      <script src="/flipper.js"></script>
+</body>
+</html>
